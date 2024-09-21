@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>照片</title>
+    <style type="text/css">
+    body{  
+        background-color: bisque;
+    }
+    .hz{
+        width: 1600px;
+        height: auto;
+        background-color: #eb9090;
+        margin: 0 auto;
+        border-radius: 10px; /* 圆角 */
+    }
+    .ph{  
+        display: flex; /* 使用Flexbox布局 */  
+        flex-wrap: wrap; /* 允许换行 */  
+        justify-content: center; /* 内容水平居中 */  
+        gap: 10px; /* 图片之间的间距 */  
+        margin: 20px; /* 容器外部留空间 */ 
+        }     
+    
+    .ph img{
+        width: 350px; /* 设置图片宽度 */  
+        height: 230px; 
+        border: 4px solid #eb9090; /* 图片边框 */  
+        border-radius: 10px; /* 圆角效果 */  
+        box-shadow: 2px 2px 8px rgba(237, 124, 162, 0.1); /* 图片阴影效果 */  
+        transition: transform 0.4s; /* 动画效果 */ 
+    }
+    img:hover{
+        transform: scale(1.05); /* 鼠标悬停时放大图片 */
+    }
+    </style>
+</head>
+<body>
+    <div class="hz">
+    <div class="ph">
+        <img src="imges/3.jpg"><img src="imges/4.jpg"><img src="imges/5.jpg">
+     <img src="imges/6.jpg"><img src="imges/7.jpg"><img src="imges/8.jpg"><img src="imges/9.jpg"><img src="imges/10.jpg"><img src="imges/11.jpg"><img src="imges/12.jpg">
+     <img src="imges/16.jpg"><img src="imges/17.jpg"><img src="imges/18.jpg"><img src="imges/19.jpg"><img src="imges/20.jpg"><img src="imges/21.jpg">
+    </div>
+</div>
+</body>
+</html>
