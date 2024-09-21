@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>  
+        #back-button, #back-link {  
+            padding: 10px 15px;  
+            border: none;  
+            border-radius: 5px;  
+            background-color: #007bff;  
+            color: white;  
+            cursor: pointer;  
+            text-decoration: none; /* 去掉下划线 */  
+            display: inline-block; /* 让 <a> 标签表现得像按钮 */  
+        }  
+
+        #back-button:hover, #back-link:hover {  
+            background-color: #0056b3;  
+        }  
+    </style>
+    <style type="text/css">
+    p1{
+        font-size: 300px;
+        color: red;
+    }
+</style>
+</head>
+
+<body>
+    <center>
+    <p1><b>还没做出来</b></p></center>
+        <button id="back-button">返回到首页</button>  
+    <a href="6.html" id="back-link">返回到音乐</a> 
+    <a href="5.html" id="back-link">返回到风景</a> 
+
+    <script>  
+        document.getElementById('back-button').addEventListener('click', function() {  
+            window.history.back(); // 返回上一个页面  
+        });  
+    </script>
+</body>
+</html>

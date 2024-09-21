@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>照片合集</title>
+    <link rel="stylesheet" href="music/2.mp3"> <!-- 如果有 CSS 文件 --> 
     <style>
    /* 创建容器样式 */  
+
    .image-container {  
             display: flex; /* 使用Flexbox布局 */  
             flex-wrap: wrap; /* 允许换行 */  
@@ -28,6 +30,25 @@
         }  
     </style> 
     <style type="text/css">
+        .overlay {  
+    position: absolute;  
+    top: 0;  
+    left: 0;  
+    right: 0;  
+    bottom: 0;  
+    background-color: rgba(0, 0, 0, 0.5); /* 半透明黑色背景 */  
+    color: white; /* 白色文字 */  
+    display: flex;  
+    justify-content: center;  
+    align-items: center;  
+    opacity: 0; /* 初始透明度为 0 */  
+    transition: opacity 0.3s; /* 平滑过渡效果 */  
+    border-radius: 8px; /* 圆角效果 */  
+}  
+
+.image-container:hover .overlay {  
+    opacity: 1; /* 悬停时透明度变为 1，显示覆盖层 */  
+}  
          .image-container img:hover {  
             transform: scale(1.05); /* 悬停时放大效果 */  
         }
@@ -56,15 +77,69 @@
             color: rgb(239, 77, 77);
         }
         body { 
-            background-color:seashell ; 
+            margin: 0;  
+            font-family: Arial, sans-serif;
+            
               
         } 
+        h2{
+            width: 1000px;
+            font-family: 黑体;
+            font-size: 60px;color: rgb(239, 77, 77);  
+            background-color: rgb(51, 52, 53);
+
+        }
+        /* 背景设置 */  
+        .sliding-background {  
+            height: 200vh;
+            position: relative;  
+            overflow: hidden; /* 防止背景溢出容器 */  
+            background-image: url('imges/37.jpg'); 
+            background-size: cover; /* 背景图像覆盖整个容器 */  
+            animation: slide-bg 30s linear infinite; /* 应用背景动画 */  
+        }
+        @keyframes slide-bg {  
+    0% {  
+            background-position: 0 0; /* 从顶部开始 */  
+    }  
+    100% {  
+             background-position: 100% 0; /* 向右滑动到100% */  
+    }  
+}
+        .top-content {  
+            height: 50vh; /* 上半部分高度为 100% 视口高度 */  
+            
+            background: rgba(0, 0, 0, 0.5); /* 半透明背景 */  
+            color: rgb(234, 133, 133); /* 文字颜色为白色 */ 
+            font-family: 宋体; 
+            font-size: 150px;
+} 
+         .bottom-content {  
+            height: 150vh; 
+            background: rgba(0, 0, 0, 0.7); /* 半透明背景 */  
+     
+}
+
+
     </style>
 </head>
 <body>
-    <h1><b><i><center>照片合集</center></i></b></h1>
-    <center><audio controls><source src="music/1.mp3" type="audio/mpeg"></audio></center>
+    <div class="sliding-background"> 
+        <div class="top-content"> 
+            <p align="right"><font size="8" ><a href="3.html" class="gallery-item">首页</a>&nbsp;&nbsp;<a href="5.html" class="gallery-item">风景</a>&nbsp;&nbsp;<a href="6.html" class="gallery-item">音乐</a>&nbsp;&nbsp;<a href="7.html" class="gallery-item">视频</a>&nbsp;&nbsp;Q:2334575708</font></p>  
+            <center><p>向下滑动查看更多</p></center>  
+        </div>  
+     
+    <div class="bottom-content">
+    <p><h1><b><i><center>照片合集</center></i></b></h1></p>  
+    <center><audio controls><source src="music/1.mp3" type="audio/mpeg"></audio></center> 
     <div class="hz"></div>
-    <div class="image-container"> <a href="4.html" class="gallery-item"> <img src="imges/3.jpg"> <img src="imges/4.jpg" ><img src="imges/5.jpg" ></a> </div>
+    <center><h2>以下图片可点击查看更多</h2></center>
+    <div class="image-container"> <a href="4.html" class="gallery-item"> <img src="imges/19.jpg" alt="点击查看更多" /> <img src="imges/18.jpg" alt="点击查看更多" /><img src="imges/26.jpg" alt="点击查看更多" /></a> </div>
+    </div>   
+     
+</div>  
+      
+
 </body>
 </html>

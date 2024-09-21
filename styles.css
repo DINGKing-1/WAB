@@ -1,0 +1,66 @@
+
+@keyframes slide-bg {  
+    0% {  
+            background-position: 0 0; /* 从顶部开始 */  
+    }  
+    100% {  
+             background-position: 100% 0; /* 向右滑动到100% */  
+    }  
+}
+
+.music-player {  
+    background: rgb(236, 230, 237);  
+    padding: 20px;  
+    border-radius: 10px;  
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+    width: 300px;
+    background: rgba(0, 0, 0, 0.7); 
+    margin: 500px 500px; 
+}  
+
+h1 {  
+    text-align: center;  
+}  
+
+.track {  
+    margin: 15px 0;  
+    padding: 10px;  
+    border: 1px solid #368fef;  
+    border-radius: 5px;  
+}  
+
+.play-btn {  
+    padding: 10px 15px;  
+    border: none;  
+    border-radius: 5px;  
+    background-color: #007bff;  
+    color: white;  
+    cursor: pointer;  
+    transition: background 0.3s;  
+    width: 100%;  
+}  
+
+.play-btn:hover {  
+    background-color: #0056b3;  
+}  
+.p{  
+    height: 150vh;
+    position: relative;  
+    overflow: hidden; /* 防止背景溢出容器 */  
+    background-image: url('imges/38.jpg'); 
+    background-size: cover; /* 背景图像覆盖整个容器 */  
+    animation: slide-bg 30s linear infinite; /* 应用背景动画 */  
+}
+#back-button, #back-link {  
+    padding: 10px 15px;  
+    border: none;  
+    border-radius: 5px;  
+    background-color: #007bff;  
+    color: white;  
+    cursor: pointer;  
+    text-decoration: none; /* 去掉下划线 */  
+    display: inline-block; /* 让 <a> 标签表现得像按钮 */  
+}  
+
+#back-button:hover, #back-link:hover {  
+    background-color: #0056b3; 

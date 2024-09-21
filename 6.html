@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>music-player</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <center>
+    <div class="p">
+    <div class="music-player">  
+        <h1>音乐播放器</h1>  
+        <div class="track" id="track1">  
+            <h2>in love</h2>  
+            <audio id="audio1" src="music/1.mp3"></audio>  
+            <button class="play-btn" data-audio="audio1">播放</button>  
+        </div>  
+    
+        <div class="track" id="track2">  
+            <h2>后来</h2>  
+            <audio id="audio2" src="music/2.mp3"></audio>  
+            <button class="play-btn" data-audio="audio2">播放</button>  
+        </div>  
+    
+        <div class="track" id="track3">  
+            <h2>一首伴奏
+            </h2>  
+            <audio id="audio3" src="music/3.mp3"></audio>  
+            <button class="play-btn" data-audio="audio3">播放</button>  
+        </div>  
+    </div> 
+
+    <script src="script.js"></script>
+</center>
+<script>  
+    document.getElementById('back-button').addEventListener('click', function() {  
+        window.history.back(); // 返回上一个页面  
+    });  
+</script>
+ 
+</div>    
+</body>
+</html>
