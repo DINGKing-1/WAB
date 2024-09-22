@@ -4,23 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>照片</title>
-    <style>  
-        #back-button, #back-link {  
-            padding: 10px 15px;  
-            border: none;  
-            border-radius: 5px;  
-            background-color: #007bff;  
-            color: white;  
-            cursor: pointer;  
-            text-decoration: none; /* 去掉下划线 */  
-            display: inline-block; /* 让 <a> 标签表现得像按钮 */  
-        }  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        #back-button:hover, #back-link:hover {  
-            background-color: #0056b3;  
-        }  
-    </style>
     <style type="text/css">
+ 
+ .container {  
+    max-width: 800px; /* 最大宽度 */  
+    margin: 0 auto; /* 居中 */  
+    padding: 20px;  
+    background-color: #fff;  
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+}  
+
+/* 针对手机的样式 */  
+@media only screen and (max-width: 600px) {  
+    body {  
+        background-color: #eaeaea; /* 手机时背景颜色变化 */  
+    }  
+    
+    .container {  
+        padding: 10px; /* 减少内边距 */  
+    }  
+    
+    h1 {  
+        font-size: 24px; /* 适应手机的字号 */  
+    }  
+    
+    p {  
+        font-size: 16px; /* 适应手机的段落字号 */  
+    }  
+}
         .sliding-background {  
             height: 200vh;
             position: relative;  
@@ -61,6 +74,7 @@
     </style>
 </head>
 <body>
+    <div class="container">
     <div class="hz">
         <div class="sliding-background">
 
@@ -71,10 +85,6 @@
      <img src="imges/32.jpg"><img src="imges/33.jpg"><img src="imges/34.jpg"><img src="imges/35.jpg"><img src="imges/36.jpg"><img src="imges/16.jpg"><img src="imges/37.jpg">
     </div>
 </div></div>
-<script>  
-    document.getElementById('back-button').addEventListener('click', function() {  
-        window.history.back(); // 返回上一个页面  
-    });  
-</script>
+</div>
 </body>
 </html>

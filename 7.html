@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>  
         #back-button, #back-link {  
             padding: 10px 15px;  
@@ -21,6 +22,32 @@
         }  
     </style>
     <style type="text/css">
+.container {  
+    max-width: 800px; /* 最大宽度 */  
+    margin: 0 auto; /* 居中 */  
+    padding: 20px;  
+    background-color: #fff;  
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+}  
+
+/* 针对手机的样式 */  
+@media only screen and (max-width: 600px) {  
+    body {  
+        background-color: #eaeaea; /* 手机时背景颜色变化 */  
+    }  
+    
+    .container {  
+        padding: 10px; /* 减少内边距 */  
+    }  
+    
+    h1 {  
+        font-size: 24px; /* 适应手机的字号 */  
+    }  
+    
+    p {  
+        font-size: 16px; /* 适应手机的段落字号 */  
+    }  
+}
     p1{
         font-size: 300px;
         color: red;
