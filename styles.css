@@ -52,7 +52,4 @@ h1 {
     animation: slide-bg 30s linear infinite; /* 应用背景动画 */  
 }
 /* 默认样式 */  
-body {  
-    display: flex; /* 使用Flexbox布局 */  
-        flex-wrap: wrap; /* 允许换行 */
-}  
+
