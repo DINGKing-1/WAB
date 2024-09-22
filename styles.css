@@ -51,16 +51,8 @@ h1 {
     background-size: cover; /* 背景图像覆盖整个容器 */  
     animation: slide-bg 30s linear infinite; /* 应用背景动画 */  
 }
-#back-button, #back-link {  
-    padding: 10px 15px;  
-    border: none;  
-    border-radius: 5px;  
-    background-color: #007bff;  
-    color: white;  
-    cursor: pointer;  
-    text-decoration: none; /* 去掉下划线 */  
-    display: inline-block; /* 让 <a> 标签表现得像按钮 */  
+/* 默认样式 */  
+body {  
+    display: flex; /* 使用Flexbox布局 */  
+        flex-wrap: wrap; /* 允许换行 */
 }  
-
-#back-button:hover, #back-link:hover {  
-    background-color: #0056b3; 
